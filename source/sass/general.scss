@@ -1,0 +1,124 @@
+@font-face {
+	font-family: "Helvetica";
+	src: url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Helvetica";
+	src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SpaceGrotesk";
+	src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2"), url("../fonts/SpaceGrotesk-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SpaceGrotesk";
+	src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2"), url("../fonts/SpaceGrotesk-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	background-color: $main-bg;
+	font-family: $base_font_family;
+	color: $grey;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto 100px;
+	padding: 0 24px;
+
+	&--info {
+		padding: 0 20px;
+	}
+
+	@media (min-width: $tablet-width) {
+		padding: 0 32px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 0 48px;
+		margin: 0 auto 150px;
+	}
+}
+
+.ttl1 {
+	display: inline;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 36px;
+	margin: 0;
+	font-family: $title_font_family;
+	color: $light-grey;
+	background: $blue;
+	text-transform: uppercase;
+	padding: 0 4px 0 0;
+
+	@media (min-width: $tablet-width) {
+		font-size: 48px;
+		line-height: 58px;
+	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 72px;
+		line-height: 86px;
+	}
+
+	&--info {
+		@media (min-width: $tablet-width) {
+			font-size: 36px;
+			line-height: 43px;
+		}
+
+		@media (min-width: $desktop-width) {
+			font-size: 72px;
+			line-height: 86px;
+		}
+	}
+}
+
+.ttl2 {
+	margin: 0;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: (43 / 36);
+	color: $black;
+	font-family: $title_font_family;
+	letter-spacing: -0.7px;
+
+	@media (max-width: $tablet-width) {
+		font-size: 28px;
+	}
+}
+
+.ttl3 {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: (24 / 20);
+	font-family: $title_font_family;
+	color: $black;
+	letter-spacing: -0.3px;
+}

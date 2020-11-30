@@ -1,0 +1,14 @@
+.articles {
+	margin-top: 36px;
+
+	@media (min-width: $tablet-width) {
+		margin-top: 49px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin-top: 49px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 32px 32px;
+	}
+}

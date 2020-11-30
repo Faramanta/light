@@ -1,0 +1,9 @@
+.page__main {
+	padding: 76px 0;
+
+	@media (min-width: $desktop-width) {
+		padding: 96px 0;
+	}
+}
+
+
